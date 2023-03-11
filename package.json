@@ -1,0 +1,23 @@
+{
+  "name": "chat-gpt-sample-alexa-integration",
+  "version": "1.0.0",
+  "description": "Alexa Skill con un ejemplo de integración con ChatGpt",
+  "main": "index.ts",
+  "author": "Iulian Farcas",
+  "license": "MIT",
+  "dependencies": {
+    "ask-sdk": "^2.12.1",
+    "ask-sdk-core": "^2.12.1",
+    "ask-sdk-model": "^1.39.0",
+    "axios": "^1.3.4",
+    "dotenv": "^16.0.3"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.9",
+    "typescript": "^4.8.4"
+  },
+  "scripts": {
+    "build": "tsc && cp -r lambda/package.json node_modules .env dist",
+    "deploy": "yarn build && ask deploy -p personal --ignore-hash "
+  }
+}

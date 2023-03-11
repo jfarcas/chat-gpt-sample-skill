@@ -1,0 +1,20 @@
+{
+  "askcliStatesVersion": "2020-03-31",
+  "profiles": {
+    "default": {
+      "skillInfrastructure": {
+        "@ask-cli/lambda-deployer": {
+          "deployState": {
+            "default": {
+              "iamRole": "Your Lambda Role",
+              "lambda": {
+                "arn": "Your lambda Function ARN"
+              }
+            }
+          }
+        }
+      },
+      "skillId": "Your skill ID"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+node_modules/
+package-lock.json
+.DS_Store
+.ask/dist
+.ask/ask-states.json
+.dist
+.github
+dist
+.env
+yarn.lock
+.idea
+!.ask/ask-states.dist.json
+/skill-package/skill.json
